@@ -23,7 +23,7 @@
 }
 body {
 	-webkit-animation: bgcolor 20s infinite;
-    	animation: bgcolor 10s infinite;
+    	animation: bgcolor 3s infinite;
     	-webkit-animation-direction: alternate;
     	animation-direction: alternate;
 	color: #1c1c1c;
@@ -31,7 +31,12 @@ body {
 	margin-top: 20px;
 	text-align: center;
 }
-
+.pen {
+	text-align: left;
+}
+img {
+	width: 100%;
+}
 ul#buttons {
 	list-style: none;
 	text-align: center;
@@ -66,9 +71,10 @@ a:hover {
 	margin: 40px auto;
 	padding: 12px;
 	width: 100px;
-	background: black;
-	color: white;
+	color: red;
 	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
 	text-decoration: none;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
