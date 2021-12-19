@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400);
+@import url(fontawesome-all.min.css);
+@keyframes bgcolor {
+    0% {
+        background: #bfaa84
+    }
+
+    30% {
+        background: #f2eada
+    }
+
+    60% {
+        background: #daf0f2
+    }
+
+    90% {
+        background: ##daf2da
+    }
+
+    100% {
+        background: #f2dfda
+    }
+}
+body {
+	-webkit-animation: bgcolor 20s infinite;
+    	animation: bgcolor 10s infinite;
+    	-webkit-animation-direction: alternate;
+    	animation-direction: alternate;
+	color: #1c1c1c;
+	font: normal 24px 'Montserrat', sans-serif;
+	margin-top: 20px;
+	text-align: center;
+}
+
+ul#buttons {
+	list-style: none;
+	text-align: center;
+	margin-top: 40px;
+}
+ul#buttons li {
+	display: inline-block;
+}
+ul#buttons li + li {
+	margin-left: 20px;
+}
+a {
+	color: #1c1c1c;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+}
+.source {
+	width: 405px;
+	margin: 0 auto;
+	background: #ffaa84;
+	color: #a7abb1;
+	font-weight: bold;
+	display: block;
+	white-space: pre;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.btn {
+	margin: 40px auto;
+	padding: 12px;
+	width: 100px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.btn:hover {
+	text-decoration: none;
+	opacity: .7;
+}
+.btn.download {
+	background: url('https://epiksel.github.io/countdown/images/icon_download.png') #0090ff no-repeat 95% 50%;
+	padding-right: 34px;
+}
+.btn.forkme {
+	background: url('https://epiksel.github.io/countdown/images/blacktocat.png') #f56c4c no-repeat 95% 50%;
+	padding-right: 40px;
+}

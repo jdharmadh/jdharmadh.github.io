@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a website.</title>
+	<link type="text/css" href="demo.css?v=1.0.0" rel="stylesheet">
+	<link type="text/css" href="../jquery.countdown.css?v=1.0.0" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.countdown.js?v=1.0.0"></script>
+</head>
+<body>
+	<ul id="example">
+		<li><span class="hours">--</span></li>
+		<li class="seperator">:</li>
+		<li><span class="minutes">--</span></li>
+		<li class="seperator">:</li>
+		<li><span class="seconds">--</span></li>
+	</ul>
+	<a href="javascript:show(div1)">under construction.</a>
+	<div id="div1" style="display: none;">
+		<p></p>
+		<i class="fa fa-battery-three-quarters"></i>
+	</div>
+	
+	<script type="text/javascript">
+		$('#example').countdown({
+			date: '03/19/2023 11:56:00', // TODO Date format: 07/27/2017 17:00:00
+			offset: +8, // TODO Your Timezone Offset
+			day: 'Day',
+			days: 'Days'
+		}, function () {
+			alert('Done!');
+		});
+		function show(obj){
+		    document.getElementById(obj.id).style.display = 'block';
+		}
+	</script>
+	
+</body>
+
+</html>
