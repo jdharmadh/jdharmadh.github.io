@@ -21,7 +21,7 @@
 	<div id="media" style="display: none;">
 		<a href="media/him.html">him.png</a><br />
 		<a href="media/shedding.html">shedding.txt</a><br />
-		<a href="media/lit.html">lit.png</a><br />
+		<a href="media/lit.html">lit.png</a><br /> 
 	</div>
 	
 	<script type="text/javascript">
@@ -34,7 +34,12 @@
 			alert('Done!');
 		});
 		function show(obj){
-		    document.getElementById(obj.id).style.display = 'block';
+		    if(document.getElementById(obj.id).style.display == 'none'){
+				document.getElementById(obj.id).style.display = 'block'
+			}
+			else {
+				document.getElementById(obj.id).style.display = 'none'
+			}
 		}
 	</script>
 	
